@@ -1,0 +1,37 @@
+.preloader-container {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 7000;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    opacity: 1;
+    display: flex;
+    transition: opacity 0.5s 1s ease;
+  }
+  
+  .preloader-img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 3s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 2s ease;
+  }
+  
+  /* For screens smaller than 768px (mobile devices) */
+  @media (max-width: 767px) {
+    .preloader-container {
+      height: 100%;
+    }
+    
+    .preloader-img {
+      height: 70vh;
+      width: auto;
+      margin: auto;
+    }
+  }
+  

@@ -1,0 +1,107 @@
+[   
+    {
+        "type": "TITLE SPONSOR",
+        "contents" : [
+            {
+                "name" : "Stone-X",
+                "image" : "/images/stone-x.png",
+                "link" : "http://www.stonex.com/"
+            },
+            {
+                "name" : "R-City",
+                "image" : "/images/r-city.png",
+                "link" : "http://rcity.co.in/"
+            }
+        ]
+    },
+    {
+        "type": "PLATFORM SPONSOR",
+        "contents" : [
+            {
+                "name" : "Devfolio",
+                "image" : "/images/devfolio.png",
+                "link" : "https://devfolio.co/"
+            }
+        ]
+    },
+    {
+        "type": "PLATINUM SPONSORS",
+        "contents" : [
+            {
+                "name" : "Polygon",
+                "image" : "/images/polygon.png",
+                "link" : "https://polygon.technology/"
+            },
+            {
+                "name" : "Solana",
+                "image" : "/images/solana.png",
+                "link" : "https://solana.com/"
+            },
+            {
+                "name" : "Filecoin",
+                "image" : "/images/filecoin.png",
+                "link" : "https://filecoin.io/"
+            },
+            {
+                "name" : "Replit",
+                "image" : "/images/replit.png",
+                "link" : "https://replit.com/"
+            }
+        ]
+    },
+    {
+        "type" : "GOLD SPONSORS",
+        "contents" : [
+            {
+                "name" : "Earth_Hacks",
+                "image" : "/images/earthhacks.png",
+                "link" : "https://earthhacks.io/"
+            },
+            {
+                "name" : "Wolfram",
+                "image" : "/images/wolfram.png",
+                "link" : "https://www.wolfram.com/"
+            },
+            {
+                "name" : ".XYZ",
+                "image" : "/images/xyz.png",
+                "link" : "https://gen.xyz/"
+            },
+            {
+                "name"  : "Interview Cake",
+                "image" : "/images/interview-cake.png",
+                "link"  : "https://www.interviewcake.com/"
+            },
+            {
+                "name"  : "Qoom",
+                "image" : "/images/qoom.png",
+                "link"  : "https://www.interviewcake.com/"
+            },
+            {
+                "name"  : "Verbwire",
+                "image" : "/images/verbwire.png",
+                "link"  : "https://www.verbwire.com/"
+            }
+        ]
+    },
+    {
+        "type" : "FOOD SPONSOR",
+        "contents" : [
+            {
+                "name" : "ButterNut",
+                "image" : "/images/butternut.png",
+                "link" : "https://www.thebutternutcompany.com/"
+            }
+        ]
+    },
+    {
+        "type" : "STICKER SPONSOR",
+        "contents" : [
+            {
+                "name" : "Stickersshub",
+                "image" : "/images/Stickersshub.png",
+                "link" : "https://www.instagram.com/stickersshub"
+            }
+        ]
+    }
+]

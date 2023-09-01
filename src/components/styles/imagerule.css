@@ -1,0 +1,29 @@
+.glow-container {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.glow-line {
+  position: absolute;
+  bottom: 0;
+  width: 75vw;
+  height: 2px;
+  background-image: linear-gradient(
+      to right,
+      rgba(229, 104, 6, 0) 0%,
+      rgba(229, 104, 6, 1) 50%,
+      rgba(229, 104, 6, 0) 100%
+    ),
+    radial-gradient(
+      circle at center,
+      rgba(229, 104, 6, 1) 0%,
+      rgba(229, 104, 6, 0) 70%
+    );
+  background-size: 100% 2px, 200px 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}

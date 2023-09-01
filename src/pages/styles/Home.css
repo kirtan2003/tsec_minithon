@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.home_mars {
+  position: absolute;
+  z-index: 5;
+  width: 120%;
+  transform: scaleX(1.25) translateY(12.5vh) translateX(-1vw);
+}
+
+.home_mars_vid {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  transform: scaleX(1.4) translateY(12.5vh) translateX(-1vw);
+}
+
+.home_logo {
+  z-index: 9;
+  position: absolute;
+  top: 25%;
+  /* top: 29.2%; */
+  left: 50%;
+  width: 85vw;
+  transform: translate(-50%, -50%);
+}
+
+.home_astro {
+  position: absolute;
+  left: 50vw;
+  bottom: -5%;
+  z-index: 10;
+  display: block;
+  transform: translateX(-50%);
+  width: auto;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.button_position {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  position: absolute;
+  bottom: 5vh;
+  width: 100%;
+  gap: 5vw;
+}
+
+/* .discord-button {
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 28px 32px;
+  height: 44px;
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+  transition: all .1s ease-in 0s;
+  white-space: nowrap;
+  width: 275px;
+  cursor: pointer;
+  font-weight: 500;
+} */
+
+.discord-button button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+}
+.discord-button button span {
+  z-index: 1;
+}
+.discord-button button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.discord-button button:hover {
+  color: #121212;
+}
+.discord-button button:hover::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+@media (max-width: 1100px) {
+  .button_position {
+    justify-content: space-evenly;
+    gap: 2.5vw;
+    bottom: 10vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .home_logo {
+    display: none;
+  }
+  .home_mars {
+    transform: scaleY(1.25) translateY(10vh) translateX(0);
+  }
+  .home_mars_vid{
+    bottom: 0;
+    transform: scaleX(2) scaleY(2) translateY(-17.5vh) translateX(0);
+    filter: brightness(2.5);
+  }
+  .home_astro {
+    bottom: 5vh;
+    transform: translateX(-50%);
+    height: 75vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .button_position {
+    display: flex;
+    justify-content: center;
+    bottom: 17.5vh;
+    width: 100%;
+    gap: 7vw;
+    flex-direction: column;
+  }
+
+  .discord-button {
+    width: 312px;
+  }
+}

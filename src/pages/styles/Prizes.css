@@ -1,0 +1,204 @@
+.prizes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  z-index: 4;
+}
+
+.prizes_title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #efefef;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 2.5px 0px #e56806;
+}
+
+.prizes_title p {
+  font-size: 1.4rem;
+  color: #e56806;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  margin-top: 0.5rem;
+}
+
+.prizes_title span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #50ffc0;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  margin: 0 0.5rem;
+}
+
+.prizes_main_div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.prizes_galactic_genius {
+  display: flex;
+  height: auto;
+  width: 87.5%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+.prizes_gg_wrapper {
+  margin: 3rem 2.5rem;
+  flex: 3;
+}
+.prizes_gg_title {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 54px;
+  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #efefef;
+  line-height: 40px;
+  z-index: 5;
+}
+.prizes_gg_content {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 2.5px;
+  text-shadow: 0px 1px 2.5px #ac5d00;
+  margin-top: 2rem;
+}
+
+.prizes_gg_subtitle {
+  flex: 2;
+  margin: auto 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  color: #ff9900;
+}
+
+.prizes_domains {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 100%;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.domain_child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+.prizes_title_2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #efefef;
+  line-height: 40px;
+  z-index: 5;
+  margin: 2rem 1rem 0;
+}
+
+.prizes_subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #efefef;
+  line-height: 40px;
+  z-index: 5;
+  margin-bottom: 2rem;
+}
+.prizes_card_content {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: #efefef;
+  z-index: 5;
+  letter-spacing: 1px;
+  text-shadow: 0px 1px 2.5px #ac5d00;
+  margin: 0rem 1.5rem 2rem 1.5rem;
+}
+
+@keyframes my-animation {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .prizes_title p {
+    font-size: 1rem;
+  }
+  .prizes_title span {
+    display: none;
+  }
+  .prizes_incomplete h1 {
+    font-size: 3.25rem;
+  }
+  .prizes_domains {
+    flex-direction: column;
+  }
+  .prizes_galactic_genius {
+    flex-direction: column-reverse;
+  }
+  .prizes_gg_wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .prizes_gg_content {
+    font-size: 1rem;
+  }
+  .prizes_gg_title {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+  .prizes_gg_subtitle {
+    font-size: 2.75rem;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  .prizes_subtitle {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+  .prizes_title_2 {
+    font-size: 1.5rem;
+  }
+  .prizes_card_content {
+    font-size: 1rem;
+  }
+}

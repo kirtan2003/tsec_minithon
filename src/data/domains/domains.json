@@ -1,0 +1,20 @@
+[
+    {
+        "title" : "DESIGN-DEVELOP",
+        "subtitle" : "WEB/APP",
+        "content" : "Explore the potential of web and mobile applications to solve real-world problems and improve lives.",
+        "color" : "#FF5733"
+    },
+    {
+        "title" : "CODE-TRAIN-RUN",
+        "subtitle" : "AI/ML",
+        "content" : "Harness the power of artificial intelligence and machine learning to build smart solutions that can learn and adapt.",
+        "color" : "#FF1744"
+    },
+    {
+        "title" : "FLAVOUR-WEB3",
+        "subtitle" : "BLOCKCHAIN",
+        "content" : "Utilize blockchain technology to develop, secure and decentralize systems that can increase transparency and trust.",
+        "color" : "#9C27B0"
+    }
+]

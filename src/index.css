@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+:root {
+  --font-color-primary: #cfcfcf;
+  --font-color-secondary: #fff;
+  --background-color: #000;
+  --foreground-color-rgb: 26, 26, 29;
+  --foreground-color-secondary: #cfcfcf;
+  --border-accent-color-primary: 255, 108, 0;
+  --border-color-rgb: 255, 255, 255;
+  --hover-color-primary: #f4f4f4;
+  --blur-strength: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--background-color);
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Inertia";
+  src: url("./data/assets/Inertia_PersonalUse.otf") format("opentype");
+}
+section {
+  width: 100vw;
+  color: var(--font-color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 2.5px;
+}
+
+::-webkit-scrollbar-track {
+  backdrop-filter: blur(15px) saturate(200%);
+  -webkit-backdrop-filter: blur(15px) saturate(200%);
+  background-color: rgba(var(--foreground-color-rgb), 0.75);
+  border-bottom: 1px solid rgba(var(--border-color-rgb), 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfcfcf30;
+}
+
+#root {
+  overflow: hidden;
+}
+
+#not-built {
+  height: 100vh;
+}
+
+#home {
+  height: 100vh;
+  transform: translateY(-25px);
+}
+
+#about {
+  height: auto;
+  margin: 8vh 0vh;
+}
+
+#domains {
+  height: auto;
+  margin: 12.5vh 0vh;
+}
+
+#prizes {
+  height: auto;
+  margin: 12.5vh 0vh;
+}
+
+#timeline {
+  height: auto;
+  margin: 12.5vh 0vh;
+}
+
+#sponsors {
+  height: auto;
+  margin: 8vh 0vh;
+}
+
+#faq {
+  height: auto;
+  margin: 8vh 0vh;
+  margin-bottom: 20vh;
+}

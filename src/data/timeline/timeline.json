@@ -1,0 +1,51 @@
+[
+    {
+        "align": "left",
+        "title": "REGISTRATION OPENS",
+        "subtitle": "The registration process for Hackerstellar begins on Devfolio",
+        "date": "07",
+        "month": "MAR"
+    },
+    {
+        "align": "right",
+        "title": "REGISTRATION ENDS",
+        "subtitle": "Round 1 Problem Statement and PPT Template is released",
+        "date": "10",
+        "month": "APR"
+    },
+    {
+        "align": "left",
+        "title": "ROUND 1 ENDS",
+        "subtitle": "The submission process for the Round 1 PPTs comes to an end",  
+        "date": "10",
+        "month": "APR"
+    },
+    {
+        "align": "right",
+        "title": "ROUND 1 RESULTS",
+        "subtitle": "Top 30 qualified teams announced & RSVP opens",
+        "date": "13",
+        "month": "APR"
+    },
+    {
+        "align": "left",
+        "title": "HACKERSTELLAR DAY 1",
+        "subtitle": "Hacktronauts get your gears ready cause its time to launch",
+        "date": "15",
+        "month": "APR"
+    },
+    {
+        "align": "right",
+        "title": "HACKERSTELLAR DAY 2",
+        "subtitle": "Time to wrap it up, hope you got that successful landing",
+        "date": "16",
+        "month": "APR"
+    },
+    {
+        "align": "left",
+        "title": "WINNERS ANNOUNCED",
+        "subtitle": "Champion Hacktronauts are revealed as the results are out",
+        "date": "16",
+        "month": "APR"
+    }
+]

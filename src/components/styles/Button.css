@@ -1,0 +1,95 @@
+.btn-wrap {
+  --fontsize: 1.1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-trapezoid-outline {
+  display: inline-block;
+  color: white;
+  background-color: #1717176e;
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+  padding: 1rem 4rem 2rem;
+  border: 0.1rem solid rgba(var(--border-color-rgb), 0.5);
+  transform: perspective(200px) rotateX(-45deg) translateZ(25px) translateY(5px);
+  backface-visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn-trapezoid-outline:hover {
+  transition: all 0.2s ease-in-out;
+}
+.btn-trapezoid-outline:active {
+  padding: 1rem 4.5rem 1.8rem;
+  top: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-trapezoid-outline span {
+  font-size: var(--fontsize);
+  letter-spacing: 0.08rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  gap: 10px;
+  transform: perspective(160px) rotateX(28deg) translateZ(4px) translateY(4px)
+    scale(0.9, 1.5);
+  padding: 3px 0;
+}
+.btn-trapezoid-outline2 {
+  display: inline-block;
+  color: #ff6c00;
+  background-color: transparent;
+  transform-style: preserve-3d;
+  padding: 1rem 4.8rem 1.8rem;
+  border: 0.2rem solid rgba(var(--border-color-rgb), 0.6);
+  transform: perspective(200px) rotateX(-45deg) translateZ(25px) translateY(5px);
+  backface-visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+.btn-trapezoid-outline2 span {
+  font-size: var(--fontsize);
+  letter-spacing: 0.08rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  gap: 10px;
+  opacity: 0;
+}
+
+.btn-trapezoid-outline.top {
+  position: absolute;
+  z-index: 1;
+}
+ 
+.btn-trapezoid-outline:active + .btn-trapezoid-outline2 {
+  border: 0.2rem solid #ff6f00e1;
+  filter: drop-shadow(0px 10px 10px #ff6f00);
+  box-shadow: 0 0 10px 2px rgb(255, 123, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn_icon {
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: auto;
+  height: 18px;
+}
+.btn-trapezoid-outline2.bottom {
+  position: relative;
+  z-index: 0;
+  top: 10px;
+}

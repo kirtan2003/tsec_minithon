@@ -1,0 +1,234 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 9vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(var(--border-color-rgb), 0.2);
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.glass {
+  backdrop-filter: blur(15px) saturate(200%);
+  -webkit-backdrop-filter: blur(15px) saturate(200%);
+  background-color: rgba(var(--foreground-color-rgb), 0.75);
+}
+
+.navbar_logo__container {
+  height: 100%;
+  width: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgba(var(--border-color-rgb), 0.2);
+}
+
+.navbar_logo {
+  height: 60%;
+  width: auto;
+  margin: auto 0;
+  aspect-ratio: 1/1;
+}
+
+.navbar_hamburger__container {
+  width: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgba(var(--border-color-rgb), 0.2);
+}
+
+.navbar_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Inertia;
+  color: var(--font-color-primary);
+  margin: auto 0;
+  text-align: center;
+  display: none;
+}
+
+.menu,
+.menu-mob {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.menu-mob {
+  display: none;
+}
+
+.menu li,
+.menu-mob li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 1.5vw;
+  padding: 0 0.5vw;
+  border-bottom: 2px solid rgba(var(--border-color-rgb), 0);
+  background: transparent;
+  transition: all 0.25s;
+  width: fit-content;
+}
+
+.menu li.active {
+  border-bottom: 3px solid rgba(var(--border-color-rgb), 0.75);
+}
+
+.menu li.active a {
+  color: var(--font-color-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color-primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--font-color-secondary);
+}
+
+.menu-icon {
+  cursor: pointer;
+  margin: auto 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+
+.menu-btn:hover {
+  background-color: var(--hover-color-primary);
+}
+
+.menu-btn {
+  display: none;
+}
+
+.navicon {
+  background-color: var(--foreground-color-secondary);
+  width: 45%;
+  height: 4px;
+  border-radius: 25px;
+  display: block;
+  position: relative;
+  transition: background-color 0.25s;
+}
+
+.navicon:before,
+.navicon:after {
+  margin: 0 10%;
+  background-color: var(--foreground-color-secondary);
+  border-radius: 25px;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.25s;
+  width: 80%;
+}
+
+.navicon:before {
+  top: 10px;
+}
+
+.navicon:after {
+  top: -10px;
+}
+
+.nav_danger {
+  font-size: 1.75rem;
+  color: var(--font-color-primary);
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    height: 8vh;
+  }
+
+  .navbar_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .navbar_logo__container {
+    width: 8vh;
+  }
+
+  .navbar_hamburger__container {
+    width: 8vh;
+  }
+
+  .menu-btn:checked~.menu {
+    max-height: 240px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-mob {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(var(--border-color-rgb), 0.2);
+    opacity: 0;
+    z-index: 90;
+  }
+
+  .menu-mob li.active {
+    border-bottom: none;
+  }
+
+  .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+  }
+
+  .menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  .open {
+    opacity: 1;
+    pointer-events: all;
+    padding-top: 9vh;
+    padding-bottom: 1vh;
+  }
+
+  .open li {
+    padding: 2.9vw 0;
+  }
+
+  .open li a {
+    font-size: 1.5rem;
+  }
+}

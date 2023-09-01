@@ -1,0 +1,144 @@
+.about_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    z-index: 4;
+    gap: 60px;
+}
+
+.stats {
+    width: 100%;
+}
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    gap: 5rem;
+}
+
+.about_heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: max-content;
+    width: 100%;
+    gap: 1rem;
+    z-index: 4;
+}
+
+.about_logo {
+    width: 40vw;
+}
+
+.about_content {
+    width: 100%;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #cfcfcf;
+    z-index: 4;
+}
+
+.about_content span {
+    font-weight: 700;
+    color: #e56806;
+}
+
+.about_heading h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #efefef;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 2.5px 0px #e56806;
+}
+
+@media (max-width: 1100px) {
+    .about_content {
+
+        font-size: 1rem;
+        line-height: 2rem;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .about_content {
+
+        font-size: 1.01rem;
+        line-height: 2.1rem;
+
+    }
+}
+
+@media (max-width: 600px) {
+    #about {
+        height: auto;
+    }
+
+    .about_heading {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_content {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .about_text {
+        width: 80%;
+        margin-top: 0;
+    }
+
+    .about_logo {
+        width: 100%;
+    }
+
+    .about_wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        /* padding-top: 400px; */
+    }
+
+    .about_heading {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stats {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .stat {
+        width: 100%;
+        height: 100%;
+    }
+
+    .stat_counter {
+        /* height: 100%; */
+        width: 30%;
+        height: 10vh;
+    }
+
+    .stat_content {
+        height: 10vh;
+        width: 70%;
+    }
+}

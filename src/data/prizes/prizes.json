@@ -1,0 +1,35 @@
+{
+  "overall": [
+    {
+      "domain": "GALACTIC GENIUS",
+      "prize": "15",
+      "desc": "Cheques, Prizes, Internships, Goodies & More!",
+      "color": "#FF8A04"
+    }
+  ],
+  "domain": [
+    {
+      "domain": "AI/ML",
+      "prize": "10",
+      "desc": "Internships, Goodies & More!",
+      "color": "#FF5733",
+      "textColor": "#FF6C4D"
+    },
+    {
+      "domain": "WEB/APP",
+      "prize": "10",
+      "desc": "Internships, Goodies & More!",
+      "color": "#FF1744",
+      "textColor": "#FF486C"
+
+    },
+    {
+      "domain": "BLOCKCHAIN",
+      "prize": "10",
+      "desc": "Internships, Goodies & More!",
+      "color": "#9C27B0",
+      "textColor": "#BF62CF"
+
+    }
+  ]
+}
